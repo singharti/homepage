@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+    <page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+        <body>
+            <move element="authorization-link-login" destination="header-wrapper" before="-"/>
+            <move element="register-link" destination="header-wrapper" before="-"/> 
+            <block class="Magento\Customer\Block\Account\RegisterLink" name="register-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">REGISTER</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Customer\Block\Account\RegisterLink" name="authorization-link-login">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">LOGIN</argument>
+                </arguments>
+            </block>
+            <referenceContainer name="footer-container">
+                <block class="Magento\Theme\Block\Html\Footer" name="footer" template="html/footer.phtml"/>
+            </referenceContainer>
+            <referenceContainer name="footer-container"> 
+                <block class="Magento\Cms\Block\Block" name="part-1"> 
+                    <arguments> 
+                        <argument name="Footer Link" xsi:type="string">part-1</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="part-2"> 
+                    <arguments> 
+                        <argument name="Footer Link" xsi:type="string">part-2</argument> 
+                    </arguments> 
+                </block> 
+                <block class="Magento\Cms\Block\Block" name="part-3"> 
+                    <arguments> 
+                        <argument name="Footer Link" xsi:type="string">part-3</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="part-4"> 
+                    <arguments> 
+                        <argument name="Footer Link" xsi:type="string">part-4</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="social-1"> 
+                    <arguments> 
+                        <argument name="Footer Social" xsi:type="string">social-1</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="newsletter"> 
+                    <arguments> 
+                        <argument name="Footer Social" xsi:type="string">newsletter</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="copyright"> 
+                    <arguments> 
+                        <argument name="Copyright Section" xsi:type="string">copyright</argument> 
+                    </arguments> 
+                </block>
+            </referenceContainer>
+            <referenceContainer name="main.content"> 
+                <block class="Magento\Cms\Block\Block" name="image-1"> 
+                    <arguments> 
+                        <argument name="Image" xsi:type="string">image-1</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="image-2"> 
+                    <arguments> 
+                        <argument name="Image" xsi:type="string">image-2</argument> 
+                    </arguments> 
+                </block>
+                 <block class="Magento\Cms\Block\Block" name="image-3"> 
+                    <arguments> 
+                        <argument name="Image" xsi:type="string">image-3</argument> 
+                    </arguments> 
+                </block>
+                 <block class="Magento\Cms\Block\Block" name="image-4"> 
+                    <arguments> 
+                        <argument name="Image" xsi:type="string">image-4</argument> 
+                    </arguments> 
+                </block>
+                 <block class="Magento\Cms\Block\Block" name="image-5"> 
+                    <arguments> 
+                        <argument name="Image" xsi:type="string">image-5</argument> 
+                    </arguments> 
+                </block>
+                 <block class="Magento\Cms\Block\Block" name="image-6"> 
+                    <arguments> 
+                        <argument name="Image" xsi:type="string">image-6</argument> 
+                    </arguments> 
+                </block>
+                 <block class="Magento\Cms\Block\Block" name="image-7"> 
+                    <arguments> 
+                        <argument name="Image" xsi:type="string">image-7</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="link-1"> 
+                    <arguments> 
+                        <argument name="Link" xsi:type="string">link-1</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="link-2"> 
+                    <arguments> 
+                        <argument name="Link" xsi:type="string">link-2</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="link-2"> 
+                    <arguments> 
+                        <argument name="Link" xsi:type="string">link-3</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="link-2"> 
+                    <arguments> 
+                        <argument name="Link" xsi:type="string">link-4</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="link-2"> 
+                    <arguments> 
+                        <argument name="Link" xsi:type="string">link-5</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="link-2"> 
+                    <arguments> 
+                        <argument name="Link" xsi:type="string">link-6</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="link-2"> 
+                    <arguments> 
+                        <argument name="Link" xsi:type="string">link-7</argument> 
+                    </arguments> 
+                </block>
+            </referenceContainer> 
+        </body>
+    </page>

@@ -1,0 +1,32 @@
+<div class="block newsletter">
+    <div class="title"><strong><?= $block->escapeHtml(__('Newsletter')) ?></strong></div>
+    <div class="content">
+        <form class="form subscribe" 
+            novalidate action="<?= $block->escapeUrl($block->getFormActionUrl()) ?>" method="post"
+            data-mage-init='{"validation": {"errorClass": "mage-error"}}'id="newsletter-validate-detail">
+            <div class="field newsletter" >
+                <label class="label" for="newsletter"><span><?= $block->escapeHtml(__('Sign Up for Our Newsletter:')) ?></span></label>
+                <div>
+                 <input name="email" type="email" id="newsletter"
+                                placeholder="<?= $block->escapeHtml(__('Enter your email to join our newsletter')) ?>"
+                                data-validate="{required:true, 'validate-email':true}"/>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="action subscribe primary" title="<?= $block->escapeHtmlAttr(__('')) ?>" type="submit">
+                    <span><?= $block->escapeHtml(__('JOIN')) ?></span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="follow-link">
+        <div class="follow"><?= /* @escapeNotVerified */ __('FOLLOW US ON') ?></div>
+        <div class="social-link">
+            <div class="facebook"><a href="#"><img  src="<?php echo $this->getViewFileUrl("images/facebook.png");?>"/></a></div>
+            <div class="twitter"><a href="#"><img  src="<?php echo $this->getViewFileUrl("images/Twitter.png");?>"/></a></div>
+            <div class="google"><a href="#"><img  src="<?php echo $this->getViewFileUrl("images/google.png");?>"/></a></div>
+            <div class="instra"><a href="#"><img  src="<?php echo $this->getViewFileUrl("images/instra.png");?>"/></a></div>
+            <div><a href="#"><img  src="<?php echo $this->getViewFileUrl("images/pinterest.png");?>"/></a></div>  
+        </div>
+    </div>

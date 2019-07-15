@@ -1,0 +1,58 @@
+<div class="uper-footer">
+    <?php
+        echo $this->getLayout()
+        ->createBlock('Magento\Cms\Block\Block')
+        ->setBlockId('newsletter')
+        ->toHtml();
+    ?>
+    <div class="follow-link">
+        <?php
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('social-1')
+            ->toHtml();
+        ?>
+    </div>
+</div>
+<div class="middle-footer">
+    <div class="footer-first-row">
+        <?php
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('part-1')
+            ->toHtml();
+        ?>
+    </div>
+    <div class="footer-second-row">
+        <?php
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('part-2')
+            ->toHtml();
+        ?>
+    </div>
+    <div class="footer-third-row">
+        <?php
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('part-3')
+            ->toHtml();
+        ?>
+    </div>
+    <div class="footer-fourth-row">
+        <?php
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('part-4')
+            ->toHtml();
+        ?>
+    </div>
+</div>
+<div class="lower-footer">
+    <?php
+         echo $this->getLayout()
+        ->createBlock('Magento\Cms\Block\Block')
+        ->setBlockId('copyright')
+        ->toHtml();
+    ?>
+</div>
