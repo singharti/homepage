@@ -1,6 +1,6 @@
 <div class="main">
-    <div class="layer">
-        <div class="image-1">
+    <div class="layer row">
+        <div class="image-1 col-md-6" >
             <?php
                 echo $this->getLayout()
                 ->createBlock('Magento\Cms\Block\Block')
@@ -14,7 +14,7 @@
                     ->toHtml();
                 ?>
         </div>
-        <div class="image-2" >
+        <div class="image-2 col-md-6 ">
             <?php
                 echo $this->getLayout()
                 ->createBlock('Magento\Cms\Block\Block')
@@ -28,9 +28,10 @@
                     ->toHtml();
                 ?>
         </div>
+        <div class="clear"></div>
     </div>
-    <div class="layer">
-        <div class="image-3" >
+    <div class="layer row">
+        <div class="image-3 col-md-8"  >
             <?php
                 echo $this->getLayout()
                 ->createBlock('Magento\Cms\Block\Block')
@@ -44,7 +45,7 @@
                     ->toHtml();
                 ?>
         </div>
-        <div class="image-4">
+        <div class="image-4 col-md-4">
             <?php
                 echo $this->getLayout()
                 ->createBlock('Magento\Cms\Block\Block')
@@ -58,37 +59,38 @@
                     ->toHtml();
                 ?>
         </div>
+        <div class="clear"></div>
     </div>
-    <div class="layer">
-        <div class="image-5">
-            <?php
-                echo $this->getLayout()
-                ->createBlock('Magento\Cms\Block\Block')
-                ->setBlockId('image-5')
-                ->toHtml();
-            ?>
-            <?php
-                echo $this->getLayout()
-                ->createBlock('Magento\Cms\Block\Block')
-                ->setBlockId('link-5')
-                ->toHtml();
-            ?>
-        </div>
-        <div class="image-6">
-            <?php
-                echo $this->getLayout()
-                ->createBlock('Magento\Cms\Block\Block')
-                ->setBlockId('image-6')
-                ->toHtml();
-            ?>
+    <div class="layer row">
+            <div class="image-5 col-md-4">
                 <?php
                     echo $this->getLayout()
                     ->createBlock('Magento\Cms\Block\Block')
-                    ->setBlockId('link-6')
+                    ->setBlockId('image-5')
                     ->toHtml();
                 ?>
-        </div>
-        <div class="image-7">
+                <?php
+                    echo $this->getLayout()
+                    ->createBlock('Magento\Cms\Block\Block')
+                    ->setBlockId('link-5')
+                    ->toHtml();
+                ?>
+            </div>
+            <div class="image-6 col-md-4">
+                <?php
+                    echo $this->getLayout()
+                    ->createBlock('Magento\Cms\Block\Block')
+                    ->setBlockId('image-6')
+                    ->toHtml();
+                ?>
+                    <?php
+                        echo $this->getLayout()
+                        ->createBlock('Magento\Cms\Block\Block')
+                        ->setBlockId('link-6')
+                        ->toHtml();
+                    ?>
+            </div>
+        <div class="image-7 col-md-4">
             <?php
                 echo $this->getLayout()
                 ->createBlock('Magento\Cms\Block\Block')
@@ -102,4 +104,5 @@
                     ->toHtml();
                 ?>
         </div>
+        <div class="clear"></div>
 </div>

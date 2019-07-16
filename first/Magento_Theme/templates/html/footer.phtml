@@ -1,18 +1,19 @@
 <div class="uper-footer">
+    <div class="follow-link">
+            <?php
+                echo $this->getLayout()
+                ->createBlock('Magento\Cms\Block\Block')
+                ->setBlockId('social-1')
+                ->toHtml();
+            ?>
+        </div>
     <?php
         echo $this->getLayout()
         ->createBlock('Magento\Cms\Block\Block')
         ->setBlockId('newsletter')
         ->toHtml();
     ?>
-    <div class="follow-link">
-        <?php
-            echo $this->getLayout()
-            ->createBlock('Magento\Cms\Block\Block')
-            ->setBlockId('social-1')
-            ->toHtml();
-        ?>
-    </div>
+    
 </div>
 <div class="middle-footer">
     <div class="footer-first-row">

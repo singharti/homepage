@@ -2051,49 +2051,295 @@
 // //     // End Main Container css
 // // }
 // Start Header Section
-// .navigation, .breadcrumbs, 
-// .page-header .header.panel, 
-// .header.content, .footer.content, 
-// .page-wrapper > .widget, .page-wrapper > 
-// .page-bottom, .block.category.event, 
+// .navigation, .breadcrumbs,
+// .page-header .header.panel,
+// .header.content, .footer.content,
+// .page-wrapper > .widget, .page-wrapper >
+// .page-bottom, .block.category.event,
 // .top-container, .page-main {
-//     box-sizing: border-box;    
+//     box-sizing: border-box;
 //     margin-left: auto;
 //     margin-right: auto;
 //     padding-left: 0px;
 //     padding-right: 0px;
 //     width: auto;
 // }
-    .page-wrapper {
-        margin: 0px 180px;
-    }
-    .page-header .header.panel{
-        box-sizing: border-box;    
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 0px;
-        padding-right: 0px;
-        width: auto;
-        background: transparent;
-    }
-    .page-header {
-        margin:0px !important;
-        padding-bottom: 9px;
-        border: none !important;
-    }
-    .page-header .panel.wrapper{
-        height: 30px;
-        margin: 0px -180px;
-    }
-    .header.content {
-        padding: 0px;
-    }
+.page-wrapper {
+    margin: 0px 180px;
+    font-family: "Times New Roman", Times, serif;
+}
+.page-header .header.panel{
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    margin: 0px 180px;
+    background: #ecdfdff7;
+}
+.page-header {
+    margin:0px !important;
+    padding-bottom: 9px;
+    border: none !important;
+}
+.page-header .panel.wrapper{
+    margin: 0px -180px;
+}   
+.header.content {
+    padding: 0px;
+}
+.panel{
+    border-radius: 0px !important;
+}
+.header-table{
+    font-size: 12px;
+    float: left;
+}
+
 // End Header Section
 // Start Navigation Section
+.nav-sections{
+    margin-bottom: 0px;
+}
 // End Navigation section
 // Start Body Section
-    .page-main {
-        width: 100%;
-        margin: 0px !important;
+.page-main {
+    width: 100%;
+    margin: 0px !important;
+    padding:0px;
+}
+.main{
+    a:visited, 
+    .alink:visited{
+        color: white;
     }
+}
+.layer{
+    display: inline-block;
+    width: 100%;
+}
+.internal-layer{
+    display: inline-block;
+    width: 70%;
+}
+.clear{
+    clear:both;
+}
+.row{
+    margin-left:0px !important;
+    .col-md-6{
+        padding: 0px;
+    }
+    .col-md-8{
+        padding: 0px;
+    }
+    .col-md-4{
+        padding: 0px;
+    }
+}
+.image-1{
+    float: left;
+    width:50%;
+    position: relative;
+    padding-right: 8px !important;
+    img{
+        width: 100%;
+    }
+    .under-link{
+        position: absolute;
+        left: 0;
+        color: white !important;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+    }
+}
+.image-2{
+    float: right;
+    width: 50%;
+    position: relative;
+    padding-left: 8px !important;
+    img{
+        width: 100%;
+    }
+    .under-link{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: white !important;
+        right: 0;
+        text-align: center;
+    }
+}
+.image-3{
+    float: left;
+    width: 70%;
+    position: relative;
+    padding-right: 5px;
+    .col-md-8{
+        padding: 0px;
+    }
+    img{
+        width: 100%;
+    }
+    .under-link{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: white !important;
+        right: 0;
+        text-align: center;
+    }
+}
+.image-4{
+    float: right;
+    width: 30%;
+    padding-left: 5px;
+    position: relative;
+    .col-md-4{
+        padding: 0px;
+    }
+    img{
+        width: 100%;
+    }
+    .casual{
+        position: absolute;
+        left: 0;
+        color: white;
+        bottom: 0;
+    }
+}
+.image-5{
+    float: left;
+    width: 40%;
+    position: relative;
+    padding-right: 6px;
+    img{
+        width: 100%;
+    }
+    .casual{
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        color:white;
+    }
+}
+.image-6{
+    float: left;
+    width:40%;
+    padding-right: 6px;
+    padding: relative;
+    .col-md-4{
+        padding: 0px;
+    }
+    img{
+        width: 100%;
+    }
+    .under-link{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: white !important;
+        right: 0;
+        text-align: center;
+    }
+}
+.image-7{
+    float: right;
+    width: 30%;
+    position: relative;
+    padding-left: 5px;
+    img{
+        width: 100%;
+    }
+    .casual{
+        position: absolute;
+        left: 0;color:white;
+        bottom: 0;
+    }
+}
+.page-layout-1column .block.widget .products-grid .product-item:nth-child(5n + 1){
+    margin-left: 25px;
+    width: 20%;
+}
+.page-layout-1column .block.widget .products-grid .product-item{
+    width: 20%;
+}
+.block.widget .product-item-info {
+    width: auto;
+    border: 1px solid gray;
+    text-align: center;
+}
+.block.widget.block-products-list.grid{
+    text-align: center;
+}
+.block-title{
+    border: 1px solid gray;
+    width: 154px;
+    background-color: white;
+    margin: auto !important;
+}
+.block-content{
+    margin-top: 45px;
+}
+.columns .column.main {
+    padding-bottom: 0px;
+}
+hr{
+    top: 40px !important;
+    position: relative ;
+    border: 0;
+    border-top: 1px solid #dcd4d4 !important;
+}
+.products-grid .product-item-info:hover, 
+.products-grid .product-item-info.active {
+    background: #ffffff;
+    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.3);
+    border: 1px solid #bbbbbb;
+    margin: 0px;
+    padding: 9px;
+    background: #f7f5f5;
+    position: relative;
+    z-index: 2;
+}
 // End Body Section
+// Start Footer Section
+.page-footer {
+    background: transparent;
+}
+.uper-footer{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.footer-link{
+    width: 50%;
+}
+.follow{
+    width:30%;
+    float: left;
+}
+.social-link{
+    float: right;
+    width: 70%;
+    .facebook{
+        float: left;
+    }
+    .twitter{
+        float: left;
+    }
+    .google{
+        float: left;
+    }
+    .instra{
+        float: left;
+    }
+    .pinerset{
+        float: left;
+    }
+}
+
+.block.newsletter {
+    width: 40%;
+    float: right;
+    width: 50%;
+}
+// End Footer Section
